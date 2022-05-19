@@ -1,0 +1,662 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sooth</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet"  href="bootstrap.min.css">
+    <link rel="stylesheet" href="https://use.typekit.net/kmr2bvt.css">
+</head>
+<body>
+    <!--Top Header-->
+    <header>
+       <div class="header-top">
+           <span>Free Standard Shipping on orders over $99.99</span>
+       </div> 
+    </header>
+    <div class="banner">
+        <!--Navbar-->
+        <nav class="navbar d-none d-md-block">
+            <div class="menu-top row">
+                <div class="col-sm-3">
+                    <ul class="row">
+                        <li class="nav-itm col-sm-6">
+                            <a  href="#">About</a>
+                        </li>
+                        <li class="nav-itm col-sm-6">
+                            <a href="#">Consultation</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-sm-6">
+                    <ul>
+                        <li class="text-center nav-itm logo-text">
+                            <a href="#" class="">Sooth</a>
+                        </li>
+                    </ul>    
+                </div>
+                <div class="col-sm-3">
+                    <ul class="row">
+                        <li class="nav-itm col-sm-4">
+                            <a  href="#"><img src="images/loupe.png" alt="map-search"></a>
+                        </li>
+                        <li class="nav-itm col-sm-4">
+                            <a  href="#">Cart</a>
+                        </li>
+                        <li class="nav-itm col-sm-4">
+                            <a href="#">Login</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="menu-bottom">
+                <ul class="d-flex flex-row justify-content-center">
+                    <li class="nav-itm-2 ">
+                        <a  href="#">Acne</a>
+                    </li>
+                    <li class="nav-itm-2 ">
+                        <a href="#">Sun</a>
+                    </li>
+                    <li class="nav-itm-2 ">
+                        <a  href="#">Ezcema</a>
+                    </li>
+                    <li class="nav-itm-2 ">
+                        <a href="#">Psoriasis</a>
+                    </li>
+                    <li class="nav-itm-2 ">
+                        <a  href="#">Vitiligio</a>
+                    </li>
+                    
+                </ul>
+            </div>
+        </nav>
+        <div class="d-xs-block d-md-none drawer-menu">
+            <ul class="d-flex flex-row justify-content-between align-items-center flex-wrap">
+                <li class="nav-itm d-flex flex-row justify-content-between">
+                    <a href="#" id='mobile-menu-btn' onclick="fnMobileMenuClick()" ><img src="./images/menu.png" alt="menu" ></a>
+                    <div id='menu' onclick="fnMenuClick()">
+                        <ul class="row">
+                            <a class="col-8" href="#" id='mobile-menu-btn' onclick="close()" >
+                                <img src="./images/close.png" alt="menu" >
+                            </a>
+                            <li class="col-4 nav-itm d-flex flex-row">
+                                <a class="mx-2" href="#"><img src="images/loupe.png" alt="map-search"></a>
+                                <a  class="mx-2" href="#">Cart</a>
+                            </li>
+                        </ul>
+                        <ul class="drw-menu my-4 d-flex flex-column justify-content-between">
+                            <li>Acne</li>
+                            <li>Sun</li>
+                            <li>Ezcema</li>
+                            <li>Psoriasis</li>
+                            <li>Vitiligio</li>
+                        </ul>
+                        <ul class="drw-menu2 my-4 d-flex flex-column justify-content-between">
+                            <li>ABOUT</li>
+                            <li>CONSULTATION</li>
+                        </ul>
+                    </div>
+                    <h3 class="drawer-logo mx-2">sooth</h3>
+                </li>
+                <li class="nav-itm d-flex flex-row justify-content-between">
+                    <a class="mx-2" href="#"><img src="images/loupe.png" alt="map-search"></a>
+                    <a  class="mx-2" href="#">Cart</a>
+                </li>
+            </ul>
+            
+        </div>
+        <!--End of Navbar-->
+
+        <!--Banner Section-->
+        <div class="banner-content row">
+            <div class="banner-content-part1 col-md-6 d-none d-lg-block">
+                <span class="new-btn">New!</span>
+                <h3 class="tag-line">All Natural <br> Skin Remedies.</h3>
+                <p class="banner-text">A healthier you from the inside out. We've sourced the cleanest ingredients to create a line of clean skin care treatments that leave you feeling your best</p>
+                <button class="shop-btn">Shop products</button>
+            </div>
+            <div class="col-md-6">
+                <img src="images/ezcema@2x.png" alt="ezcema" class=" banner-img d-none d-lg-block">
+                <img src="images/ezcema-2.png" alt="ezcema" class="d-block d-lg-none">
+            </div>
+            <div class="banner-content-part1 col-md-6 d-block d-lg-none">
+                <span class="new-btn">New!</span>
+                <h3 class="tag-line">All Natural <br> Skin Remedies.</h3>
+                <p class="banner-text">A healthier you from the inside out. We've sourced the cleanest ingredients to create a line of clean skin care treatments that leave you feeling your best</p>
+                <button class="shop-btn">Shop products</button>
+            </div>
+            
+        </div>
+        <!--End of Banner Section-->
+    </div>
+    <main>
+        <!--Headline Information-->
+        <div class="add-block d-xs-block d-xl-none ">
+
+        </div>
+        <div class="head-info text-center">
+            <h4>Solutions for all skin health</h4>
+            <p>Explore our innovative skincare products</p>
+        </div>
+        <!--End of Headline Information-->
+
+        <!--products gallery-->
+        <div class="shop-slide">
+            <div class="shop-filter row">
+                <span class="col-6 text-start">Most Popular</span>
+                <span class="col-6 text-end">Shop all products</span>
+            </div>
+            <div class="shop-products row">
+                <div class="shop-items col-xs-6 col-md-4 col-lg-3">
+                    <div class="product-img d-flex flex-column justify-content-start align-items-start ">
+                        <span class="info-btn mt-3 ms-3">New!</span>
+                        <img class="mb-3" src="./images/Cream1.png" alt="cream1">
+                    </div>
+                    <div class="product-desc">
+                        <h6 class="product-name">Acne Cream</h6>
+                        <span class="product-details">All Natural Ingredients.</span>
+                        <span class="product-price">$24.99</span>
+                    </div>
+                    <div class="cart-button d-flex justify-content-center">
+                        <button class="add-to-cart d-flex justify-content-center align-items-center">
+                            <img src="./images/shopping-cart.png">Add to cart
+                        </button>
+                    </div>
+                    
+                </div>
+                <div class="shop-items col-xs-6 col-md-4 col-lg-3">
+                    <div class="product-img d-flex flex-column justify-content-start align-items-start">
+                        <span class="info-btn mt-3 ms-3">New!</span>
+                        <img class="mb-3" src="./images/vitiligio.png" alt="vitiligo">
+                    </div>
+                    <div class="product-desc">
+                        <h6 class="product-name">Vitiligio Solution</h6>
+                        <span class="product-details">All Natural Ingredients.</span>
+                        <span class="product-price">$24.99</span>
+                    </div>
+                    <div class="cart-button d-flex justify-content-center">
+                        <button class="add-to-cart d-flex justify-content-center align-items-center">
+                            <img src="./images/shopping-cart.png">Add to cart
+                        </button>
+                    </div>                    
+                </div>
+                <div class="shop-items col-xs-6 col-md-4 col-lg-3">
+                    <div class="product-img d-flex flex-column justify-content-start align-items-start">
+                        <span class="info-btn mt-3 ms-3 invisible">New!</span>
+                        <img  class="mb-3" src="./images/ezcema.png" alt="ezcema">
+                    </div>
+                    <div class="product-desc">
+                        <h6 class="product-name">Ezcema Cream</h6>
+                        <span class="product-details">All Natural Ingredients.</span>
+                        <span class="product-price">$24.99</span>
+                    </div>
+                    <div class="cart-button d-flex justify-content-center">
+                        <button class="add-to-cart d-flex justify-content-center align-items-center">
+                            <img src="./images/shopping-cart.png">Add to cart
+                        </button>
+                    </div>
+                   
+                </div>
+                <div class="shop-items col-xs-6 col-md-4 col-lg-3">
+                    <div class="product-img d-flex flex-column justify-content-start align-items-start">
+                        <span class="info-btn mt-3 ms-3" style="color: #A67744;">15% off</span>
+                        <img src="./images/suburn1.png" alt="suburn1">
+                    </div>
+                    <div class="product-desc">
+                        <h6 class="product-name">Sunburn Ointment</h6>
+                        <span class="product-details">All Natural Ingredients.</span>
+                        <span class="product-price">$24.99</span>
+                    </div>
+                    <div class="cart-button d-flex justify-content-center">
+                        <button class="add-to-cart d-flex justify-content-center align-items-center">
+                            <img src="./images/shopping-cart.png">Add to cart
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--End of Products Gallery-->
+
+        <!--About Section-->
+        <div class="about-section row">
+            <div class="about-content col-sm-6">
+                <h3 class="about-head">Clean products that deliver better solutions</h3>
+                <p class="about-desc">A healthier you from the inside out. We've sourced the cleanest ingredients to create a line of clean skin care treatments that leave you feeling your best</p>
+                <button class="about-shop-btn">Shop More</button>
+            </div>
+            <div class="about-image1 col-sm-6">
+            </div>
+        </div>
+        <!--End of About Section-->
+
+        <!--products gallery-->
+        <div class="shop-slide">
+            <div class="shop-filter row">
+                <span class="col-6 text-start">Top rated</span>
+                <span class="col-6 text-end">Shop all products</span>
+            </div>
+            <div class="shop-products row">
+                <div class="shop-items col-xs-6 col-md-4 col-lg-3">
+                    <div class="product-img d-flex flex-column justify-content-start align-items-start ">
+                        <span class="info-btn mt-3 ms-3 invisible">New!</span>
+                        <img class="mb-3" src="./images/psoriasis_treatment.png" alt="Psoriasis Cream">
+                    </div>
+                    <div class="product-desc">
+                        <h6 class="product-name">Psoriasis Cream</h6>
+                        <span class="product-details">All Natural Ingredients.</span>
+                        <span class="product-price">$24.99</span>
+                    </div>
+                    <div class="cart-button d-flex justify-content-center">
+                        <button class="add-to-cart d-flex justify-content-center align-items-center">
+                            <img src="./images/shopping-cart.png">Add to cart
+                        </button>
+                    </div>
+                    
+                </div>
+                <div class="shop-items col-xs-6 col-md-4 col-lg-3">
+                    <div class="product-img d-flex flex-column justify-content-start align-items-start">
+                        <span class="info-btn mt-3 ms-3 invisible">New!</span>
+                        <img class="mb-3" src="./images/ezcema.png" alt="ezcema">
+                    </div>
+                    <div class="product-desc">
+                        <h6 class="product-name">Ezcema Cream</h6>
+                        <span class="product-details">All Natural Ingredients.</span>
+                        <span class="product-price">$24.99</span>
+                    </div>
+                    <div class="cart-button d-flex justify-content-center">
+                        <button class="add-to-cart d-flex justify-content-center align-items-center">
+                            <img src="./images/shopping-cart.png">Add to cart
+                        </button>
+                    </div>                    
+                </div>
+                <div class="shop-items col-xs-6 col-md-4 col-lg-3">
+                    <div class="product-img d-flex flex-column justify-content-start align-items-start">
+                        <span class="info-btn mt-3 ms-3 invisible">New!</span>
+                        <img  class="mb-3" src="./images/suburn1.png" alt="Sunburn Ointment">
+                    </div>
+                    <div class="product-desc">
+                        <h6 class="product-name">Sunburn Ointment</h6>
+                        <span class="product-details">All Natural Ingredients.</span>
+                        <span class="product-price">$24.99</span>
+                    </div>
+                    <div class="cart-button d-flex justify-content-center">
+                        <button class="add-to-cart d-flex justify-content-center align-items-center">
+                            <img src="./images/shopping-cart.png">Add to cart
+                        </button>
+                    </div>
+                   
+                </div>
+                <div class="shop-items col-xs-6 col-md-4 col-lg-3">
+                    <div class="product-img d-flex flex-column justify-content-start align-items-start">
+                        <span class="info-btn mt-3 ms-3 invisible" style="color: #A67744;">15% off</span>
+                        <img src="./images/vitiligio_Balm.png" alt="Vitiligio Balm">
+                    </div>
+                    <div class="product-desc">
+                        <h6 class="product-name">Vitiligio Balm</h6>
+                        <span class="product-details">All Natural Ingredients.</span>
+                        <span class="product-price">$24.99</span>
+                    </div>
+                    <div class="cart-button d-flex justify-content-center">
+                        <button class="add-to-cart d-flex justify-content-center align-items-center">
+                            <img src="./images/shopping-cart.png">Add to cart
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class="shop-products row">
+                <div class="shop-items col-xs-6 col-md-4 col-lg-3">
+                    <div class="product-img d-flex flex-column justify-content-start align-items-start ">
+                        <span class="info-btn mt-3 ms-3 invisible">New!</span>
+                        <img class="mb-3" src="./images/vitiligio.png" alt="Vitiligio Solution">
+                    </div>
+                    <div class="product-desc">
+                        <h6 class="product-name">Vitiligio Solution</h6>
+                        <span class="product-details">All Natural Ingredients.</span>
+                        <span class="product-price">$24.99</span>
+                    </div>
+                    <div class="cart-button d-flex justify-content-center">
+                        <button class="add-to-cart d-flex justify-content-center align-items-center">
+                            <img src="./images/shopping-cart.png">Add to cart
+                        </button>
+                    </div>
+                    
+                </div>
+                <div class="shop-items col-xs-6 col-md-4 col-lg-3">
+                    <div class="product-img d-flex flex-column justify-content-start align-items-start">
+                        <span class="info-btn mt-3 ms-3 invisible">New!</span>
+                        <img class="mb-3" src="./images/Cream1.png" alt="Acne Cream">
+                    </div>
+                    <div class="product-desc">
+                        <h6 class="product-name">Acne Cream</h6>
+                        <span class="product-details">All Natural Ingredients.</span>
+                        <span class="product-price">$24.99</span>
+                    </div>
+                    <div class="cart-button d-flex justify-content-center">
+                        <button class="add-to-cart d-flex justify-content-center align-items-center">
+                            <img src="./images/shopping-cart.png">Add to cart
+                        </button>
+                    </div>                    
+                </div>
+                <div class="shop-items col-xs-6 col-md-4 col-lg-3">
+                    <div class="product-img d-flex flex-column justify-content-start align-items-start">
+                        <span class="info-btn mt-3 ms-3 invisible">New!</span>
+                        <img  class="mb-3" src="./images/acne_Cream.png" alt="Acne Cream">
+                    </div>
+                    <div class="product-desc">
+                        <h6 class="product-name">Acne Cream</h6>
+                        <span class="product-details">All Natural Ingredients.</span>
+                        <span class="product-price">$24.99</span>
+                    </div>
+                    <div class="cart-button d-flex justify-content-center">
+                        <button class="add-to-cart d-flex justify-content-center align-items-center">
+                            <img src="./images/shopping-cart.png">Add to cart
+                        </button>
+                    </div>
+                   
+                </div>
+                <div class="shop-items col-xs-6 col-md-4 col-lg-3">
+                    <div class="product-img d-flex flex-column justify-content-start align-items-start">
+                        <span class="info-btn mt-3 ms-3 invisible" style="color: #A67744;">15% off</span>
+                        <img src="./images/ezema_dropper.png" alt="Ezcema Oil">
+                    </div>
+                    <div class="product-desc">
+                        <h6 class="product-name">Ezcema Oil</h6>
+                        <span class="product-details">All Natural Ingredients.</span>
+                        <span class="product-price">$24.99</span>
+                    </div>
+                    <div class="cart-button d-flex justify-content-center">
+                        <button class="add-to-cart d-flex justify-content-center align-items-center">
+                            <img src="./images/shopping-cart.png">Add to cart
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--End of Products Gallery-->
+
+        <!--About Section 2-->
+        <div class="about-section row">
+            <div class="about-image2 col-sm-6">
+            </div>
+            <div class="about-content2 col-sm-6">
+                <h3 class="about-head">Clean products that deliver better solutions</h3>
+                <p class="about-desc2">A healthier you from the inside out. We've sourced the cleanest ingredients to create a line of clean skin care treatments that leave you feeling your best</p>
+                <button class="about-shop-btn2">Shop More</button>
+            </div>
+        </div>
+        <!--End of About Section 2-->
+
+        <!--products gallery-->
+        <div class="shop-slide">
+            <div class="shop-filter row">
+                <span class="col-6 text-start">Recommended</span>
+                <span class="col-6 text-end">Shop all products</span>
+            </div>
+            <div class="shop-products row">
+                <div class="shop-items col-xs-6 col-md-4 col-lg-3">
+                    <div class="product-img d-flex flex-column justify-content-start align-items-start ">
+                        <span class="info-btn mt-3 ms-3  invisible">New!</span>
+                        <img class="mb-3" src="./images/psoriasis_treatment.png" alt="Psoriasis Cream">
+                    </div>
+                    <div class="product-desc">
+                        <h6 class="product-name">Psoriasis Cream</h6>
+                        <span class="product-details">All Natural Ingredients.</span>
+                        <span class="product-price">$24.99</span>
+                    </div>
+                    <div class="cart-button d-flex justify-content-center">
+                        <button class="add-to-cart d-flex justify-content-center align-items-center">
+                            <img src="./images/shopping-cart.png">Add to cart
+                        </button>
+                    </div>
+                    
+                </div>
+                <div class="shop-items col-xs-6 col-md-4 col-lg-3">
+                    <div class="product-img d-flex flex-column justify-content-start align-items-start">
+                        <span class="info-btn mt-3 ms-3  invisible">New!</span>
+                        <img class="mb-3" src="./images/suburn_balm.png" alt="vitiligo">
+                    </div>
+                    <div class="product-desc">
+                        <h6 class="product-name">Sunburn Balm</h6>
+                        <span class="product-details">All Natural Ingredients.</span>
+                        <span class="product-price">$24.99</span>
+                    </div>
+                    <div class="cart-button d-flex justify-content-center">
+                        <button class="add-to-cart d-flex justify-content-center align-items-center">
+                            <img src="./images/shopping-cart.png">Add to cart
+                        </button>
+                    </div>                    
+                </div>
+                <div class="shop-items col-xs-6 col-md-4 col-lg-3">
+                    <div class="product-img d-flex flex-column justify-content-start align-items-start">
+                        <span class="info-btn mt-3 ms-3 invisible">New!</span>
+                        <img  class="mb-3" src="./images/psoriasi_Cream.png" alt="Psoriasis Cream">
+                    </div>
+                    <div class="product-desc">
+                        <h6 class="product-name">Psoriasis Cream</h6>
+                        <span class="product-details">All Natural Ingredients.</span>
+                        <span class="product-price">$24.99</span>
+                    </div>
+                    <div class="cart-button d-flex justify-content-center">
+                        <button class="add-to-cart d-flex justify-content-center align-items-center">
+                            <img src="./images/shopping-cart.png">Add to cart
+                        </button>
+                    </div>
+                   
+                </div>
+                <div class="shop-items col-xs-6 col-md-4 col-lg-3">
+                    <div class="product-img d-flex flex-column justify-content-start align-items-start">
+                        <span class="info-btn mt-3 ms-3  invisible" style="color: #A67744;">15% off</span>
+                        <img src="./images/vitiglio_treatment.png" alt="Vitiligio Treatment">
+                    </div>
+                    <div class="product-desc">
+                        <h6 class="product-name">Vitiligio Treatment</h6>
+                        <span class="product-details">All Natural Ingredients.</span>
+                        <span class="product-price">$24.99</span>
+                    </div>
+                    <div class="cart-button d-flex justify-content-center">
+                        <button class="add-to-cart d-flex justify-content-center align-items-center">
+                            <img src="./images/shopping-cart.png">Add to cart
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--End of Products Gallery-->
+
+        <!--ingredients Section-->
+        <div class="ingredients">
+            <h4 class="ingredients-headline">We use the best ingredients</h4>
+            <p class="ingredients-tag-line">Explore our innovative skincare products</p>
+            <div class="ingredients-items d-flex flex-row justify-content-between flex-wrap flex-fill">
+                <div class="ing-content">
+                    <img class="ing-img" src="./images/Cacao.png" alt="Cacao">
+                    <h5 class="ing-head">Cacao</h5>
+                    <p class="ing-desc">Lorem ipsum dolar et al</p>
+                </div>
+                <div class="ing-content">
+                    <img class="ing-img" src="./images/honey.png" alt="honey">
+                    <h5 class="ing-head">Honey</h5>
+                    <p class="ing-desc">Lorem ipsum dolar et al</p>
+                </div>
+                <div class="ing-content">
+                    <img class="ing-img" src="./images/mint.png" alt="mint">
+                    <h5 class="ing-head">Mint</h5>
+                    <p class="ing-desc">Lorem ipsum dolar et al</p>
+                </div>
+                <div class="ing-content">
+                    <img class="ing-img" src="./images/Coconut-root.png" alt="Coconut root">
+                    <h5 class="ing-head">Coconut root</h5>
+                    <p class="ing-desc">Lorem ipsum dolar et al</p>
+                </div>
+                <div class="ing-content">
+                    <img class="ing-img" src="./images/Flour.png" alt="Flour">
+                    <h5 class="ing-head">Flour</h5>
+                    <p class="ing-desc">Lorem ipsum dolar et al</p>
+                </div>
+                <div class="ing-content">
+                    <img class="ing-img" src="./images/Cacao-2.png" alt="Cacao">
+                    <h5 class="ing-head">Cacao</h5>
+                    <p class="ing-desc">Lorem ipsum dolar et al</p>
+                </div>
+            </div>
+        </div>
+        <!-- End of ingredients Section-->
+
+        <!--Info Letter-->
+        <div class="info-letter">
+            <div class="info-content d-flex flex-wrap justify-content-evenly">
+                <div class="info-items  d-flex flex-column justify-content-center">
+                    <img src="./images/store.png" alt="store">
+                    <p class="info-head">We're offering new ways to shop.</p>
+                    <span>Store locator</span>
+                </div> 
+                <div class="info-items d-flex flex-column justify-content-center">
+                    <img src="./images/shopping-cart-new.png">
+                    <p class="info-head">Buy online, pickup in store</p>
+                    <span>Learn more</span>
+                </div>
+                <div class="info-items d-flex flex-column">
+                    <img src="./images/telephone-call.png">
+                    <p class="info-head">Curbside pickup</p>
+                    <span>Learn more</span>
+                </div>
+            </div>
+        </div>
+        <!--End of Info Letter-->
+
+        <!--Newsletter Section-->
+        <div class="newsletter row">
+            <div class="newsletter-head col-md-3">
+                <h3>Join the Sooth family</h3>
+            </div>
+            <div class="newletter-desc col-md-5 d-flex align-items-center">
+                <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy</p>
+            </div>
+            <div class="col-md-4 d-flex align-items-center">
+                <form class="newsletter-search  ">
+                    <input type="search" name="subscribe">
+                    <button>Subscribe</button>
+                </form>
+            </div>
+        </div>
+        <!--End of Newsletter Section-->
+    </main>
+    <footer>
+        <div class="f-row-1 row">
+            <div class="col-sm-6">
+                <a href="#" class="footer-logo">sooth</a>
+                <p class="footer-tagline">Explore our innovative skincare products</p>
+                <div class="d-flex align-items-center">
+                    <form class="f-newsletter-search mb-2">
+                        <input type="search" name="subscribe" placeholder="Your email...">
+                        <button>Subscribe</button>
+                    </form>
+                </div>
+            </div>
+            <div class="col-md-2">
+               <span class="footer-menu-label">SHOP</span>
+               <ul class="footer-menu">
+                   <li class="footer-menu-list">Lorem ipsum al</li>
+                   <li class="footer-menu-list">Dolar at</li>
+                   <li class="footer-menu-list">Veraotio</li>
+                   <li class="footer-menu-list">Chauloe</li>
+               </ul>
+            </div>
+            <div class="col-md-2">
+                <span class="footer-menu-label">ABOUT</span>
+               <ul class="footer-menu">
+                   <li class="footer-menu-list">About Us</li>
+                   <li class="footer-menu-list">Sooth Stories (Blog)</li>
+                   <li class="footer-menu-list">Contact Us</li>
+                   <li class="footer-menu-list">Learn More</li>
+                   <li class="footer-menu-list">Stores</li>
+               </ul>
+            </div>
+            <div class="col-md-2">
+                <span class="footer-menu-label">MORE</span>
+               <ul class="footer-menu">
+                   <li class="footer-menu-list">Dolar at</li>
+                   <li class="footer-menu-list">Lorem at al</li>
+                   <li class="footer-menu-list">Veraotio</li>
+               </ul>
+            </div>
+        </div>
+        <div class="f-row-2 row">
+            <span class="f-copy-label">SOOTH ALL RIGHTS RESERVED</span>
+            <div class="f-copy-items col-xs-12 col-md-5 d-flex flex-row justify-content-between flex-wrap ">
+                <a href="#">Privacy Policy</a>
+                <a href="#">Terms of Use</a>
+                <a href="#">Contact Us</a>
+            </div>
+            <div class="col-md-4"></div>
+            <div class=" col-xs-12 col-md-3 f-social d-flex flex-row justify-content-between flex-wrap mt-2">
+                <a href="#">
+                    <img src="./images/facebook.png" alt="facebook">
+                </a>
+                <a href="#">
+                    <img src="./images/instagram.png" alt="instagram">
+                </a>
+                <a href="#">
+                    <img src="./images/twitter.png" alt="twitter">
+                </a>
+                <a href="#">
+                    <img src="./images/youtube.png" alt="youtube">
+                </a>
+            </div>
+        </div>
+    </footer>
+    <script>
+        var cnt = 0;
+        var flag = true;
+        var menuRef=document.querySelector('#menu');
+        var btnRef = document.getElementById('mobile-menu-btn');
+        btnRef.style.display = 'none';
+        window.addEventListener('resize', function () {
+            if (flag) {
+                resize();
+                flag = false;
+                setTimeout(function () {
+                    flag = true;
+                }, 200)
+            }
+    
+        })
+    
+        function resize() {
+            var width = document.body.offsetWidth;
+            if (width < 768) {
+                btnRef.style.display = 'inline';
+                menuRef.className='mobile-menu'
+            } else {
+                btnRef.style.display = 'none';
+                menuRef.className="menu"
+            }
+        }
+        function fnMobileMenuClick(){
+            var styleAttr=menuRef.getAttribute('style')
+              if(styleAttr == null){
+               menuRef.style.left='0px';
+              }else{
+                  menuRef.removeAttribute('style');
+              }
+        }
+    
+        resize();
+    
+        function fnMenuClick(){
+            var mobileMenuRef=document.querySelector('.mobile-menu');
+            if(mobileMenuRef){
+                fnMobileMenuClick();
+            }
+        }
+        function close(){
+            var mobileMenuRef=document.querySelector('.mobile-menu');
+            if(mobileMenuRef){
+                fnMobileMenuClick();
+            } 
+        }
+    </script>
+</body>
+</html>
