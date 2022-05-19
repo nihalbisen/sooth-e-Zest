@@ -244,6 +244,9 @@ body{
     margin-bottom: 0.8rem;
     box-sizing: border-box !important;
 }
+.cart-button{
+    margin-left: -28px !important;
+}
 .info-btn{
     background-color: #F7F7F7;
     line-height: 14px;
