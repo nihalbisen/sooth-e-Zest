@@ -454,6 +454,7 @@ body{
 
 /*Newsletter Section*/
 .newsletter{
+    --bs-gutter-x: 0 !important;
     padding: 35px 138px;
     background-color: #FFFFFF;
     border: 1px solid #354E57;
