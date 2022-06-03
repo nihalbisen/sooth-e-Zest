@@ -299,7 +299,7 @@ body{
 /*About Section*/
 .about-section{
     height: 731px;
-    
+    --bs-gutter-x: 0 !important;
 }
 .about-content{
     background-color:  #547665;
